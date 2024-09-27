@@ -1,0 +1,74 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #282c34;
+    font-family: 'Arial', sans-serif;
+    color: white;
+}
+
+#container {
+    text-align: center;
+}
+
+#scoreboard {
+    display: flex;
+    justify-content: center; /* Centraliza o texto */
+    width: 500px; /* Mesma largura da área do jogo */
+    margin-bottom: 10px;
+    font-size: 18px; /* Diminui o tamanho da fonte */
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 5px; /* Diminui o padding */
+    border-radius: 8px;
+    overflow: hidden; /* Para evitar que o texto saia da área */
+}
+
+#scoreboard div {
+    margin: 0 10px; /* Ajusta o espaço entre os jogadores */
+    white-space: nowrap; /* Não quebra a linha */
+    text-overflow: ellipsis; /* Adiciona reticências se o texto for muito longo */
+    overflow: hidden; /* Oculta o texto que ultrapassa a largura */
+}
+
+#gameArea {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    border: 2px solid #ffffff;
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    margin: 0 auto;
+}
+
+#player1, #player2 {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+#player1 {
+    background-color: red;
+}
+
+#player2 {
+    background-color: blue;
+}
+
+.bullet {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+}
+
+#message {
+    margin-top: 20px;
+    font-size: 24px;
+    color: #00ff00;
+    font-weight: bold;
+}
